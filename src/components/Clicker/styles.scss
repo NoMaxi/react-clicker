@@ -1,0 +1,46 @@
+$value-font-size: 2.5rem;
+
+.clicker-actions {
+  flex: 0 1 50%;
+  align-items: stretch;
+
+  .btn.btn-clicker {
+    flex: 0 1 100%;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    letter-spacing: 0.25rem;
+    min-height: 170px;
+  }
+}
+
+.clicker-info {
+  flex: 0 1 50%;
+  margin-left: 20px;
+
+  .clicker-count, .clicker-time {
+    color: #203434;
+    font-size: 1.4rem;
+    letter-spacing: 0.13rem;
+
+    span:first-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  .clicker-count {
+    margin-bottom: 25px;
+
+    &-value {
+      font-size: $value-font-size;
+      color: darkgreen;
+    }
+  }
+
+  .clicker-time {
+    &-value {
+      font-size: $value-font-size;
+      color: darkred;
+    }
+  }
+}
+

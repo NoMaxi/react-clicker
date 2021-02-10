@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+$rank-width: 13%;
+$username-width: 37%;
+$result-width: 25%;
+
+td {
+  border: $table-border;
+  padding: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rank {
+  width: $rank-width;
+}
+
+.username {
+  width: $username-width;
+}
+
+.result {
+  color: darkred;
+  width: $result-width;
+}
+
+.speed {
+  width: calc(100% - #{$result-width} - #{$username-width} - #{$rank-width});
+}

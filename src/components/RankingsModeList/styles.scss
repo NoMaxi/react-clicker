@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.card.rankings-card {
+  padding-top: 18px;
+}
+
+.rankings-item {
+  display: table-row;
+}
+
+.rankings-item:first-child {
+  background-color: gold;
+  font-weight: bold;
+}
+
+.rankings-item:nth-child(2) {
+  background-color: lightcyan;
+  font-weight: bold;
+}
+
+.rankings-item:nth-child(3) {
+  background-color: #d7cd7a;
+  font-weight: bold;
+}
+
+.card-title.rankings-title {
+  font-size: 1.8rem;
+  text-transform: unset;
+}
+
+.rankings-table {
+  color: #243c3c;
+  border: $table-border;
+  border-collapse: collapse;
+
+  thead {
+    background-color: lightgrey;
+    font-size: 1.4rem;
+  }
+
+  tbody {
+    background-color: #fff;
+    font-size: 1.3rem;
+  }
+
+  th {
+    border: $table-border;
+    padding: 8px;
+  }
+}

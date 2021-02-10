@@ -1,0 +1,67 @@
+@import '../../styles/variables';
+
+$toolbar-bg-color: #212121;
+$link-hover-color: #6bbcf1;
+$link-active-color: #e12ebc;
+$avatar-size: 55px;
+
+.appbar.MuiAppBar-colorPrimary {
+  background-color: $toolbar-bg-color;
+}
+
+.toolbar {
+  height: $navbar-height;
+
+  .logo img {
+    object-fit: contain;
+    height: 100%;
+    width: 300px;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.13rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  .nav-link-active {
+    color: $link-active-color;
+
+    &:hover {
+      color: $link-active-color;
+    }
+  }
+
+  &-nav {
+    .nav-link {
+      margin-left: 50px;
+    }
+  }
+
+  .user-avatar {
+    &-img {
+      border-radius: 50%;
+      height: $avatar-size;
+      margin-bottom: 5px;
+      width: $avatar-size;
+    }
+
+    &-name {
+      color: goldenrod;
+      font-size: 1rem;
+      text-transform: initial;
+    }
+
+    &:hover span {
+      color: #dee5a8;
+    }
+  }
+}

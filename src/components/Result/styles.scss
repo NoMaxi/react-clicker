@@ -1,0 +1,28 @@
+$value-font-size: 2.5rem;
+$message-flex-basis: 70%;
+
+.result-actions {
+  flex: 0 1 100%-$message-flex-basis;
+  align-items: stretch;
+
+  .btn-restart {
+    flex: 0 1 100%;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    max-width: 180px;
+    min-height: 55px;
+  }
+}
+
+.result-message {
+  flex: 0 1 $message-flex-basis;
+  background-color: #f6f5f5;
+  padding: 5px 10px;
+  margin: 15px 0 25px;
+
+  &-text {
+    color: #540404;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+}

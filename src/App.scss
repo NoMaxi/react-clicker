@@ -1,0 +1,53 @@
+@import 'styles/reset';
+@import 'styles/basic';
+@import 'styles/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: url('./assets/game-bg.jpg') #fff center/cover no-repeat;
+  color: #051120;
+  font-family: $base-font-family;
+}
+
+.card {
+  background-color: $card-bg-color;
+  border-radius: 6px;
+  box-shadow: $card-box-shadow;
+  font-size: 1.2rem;
+  opacity: 0.92;
+  padding: 25px;
+
+  .card-title {
+    color: $card-title-color;
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+  }
+}
+
+.card + .card {
+  margin-top: 25px;
+}
+
+.MuiContainer-root.MuiContainer-maxWidthMd {
+  max-width: 850px;
+}
+
+input.MuiOutlinedInput-input {
+  background-color: $form-input-bg-color;
+  color: $form-input-color;
+  font-size: 1.2rem;
+}
+
+.btn.MuiButton-root {
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}

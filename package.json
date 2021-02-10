@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "npm run build --aot --prod"
   },
   "eslintConfig": {
     "extends": [
